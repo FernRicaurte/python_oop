@@ -5,15 +5,16 @@ class Employee:
         self.position = position 
         self.salary = salary
         
-    def increase_salary(employee, percent):
-        employee['salary'] += employee['salary'] * (percent/100)
+    def increase_salary(self, percent):
+        self.salary += self.salary * (percent/100)
         
-    def employee_info(employee):
-        print(f"{employee['name']} is {employee['age']} years old. Employee is a {employee['position']} with the salary of ${employee['salary']}")
+    def info(self):
+        print(f"{self.name} is {self.age} years old. Employee is a {self.position} with the salary of ${self.salary}")
 
 employee1 = Employee("Ji-Soo", 38, "developer", 1200)
 employee2 = Employee("Lauren", 44, "tester", 1000)
-print(employee1.name)
-print(employee2.name)
+employee2.increase_salary(20)
+employee2.info()
 
-#The process of using a class to create a new object is called Instantiation.
+# The process of using a class to create a new object is called Instantiation.
+# You can give functionality to your class and pass it to the instances of your object/class. Functions inside of a class are known as methods or instance functions/methods.
