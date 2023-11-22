@@ -29,3 +29,4 @@ print(eval(repr(employee1)))
 
 # The __str__ function is the first default built in method within the class that is retrieved, so to pass the __str__ when calling an instance, is the norm. The point of this method is to return something that the print function will be able to print, so it makes no sense to print this inside of the method too. The __str__ returns a readable representation of an object/instance.
 
+# The __repr__ function returns a more information-rich, or official, string representation of an object. This method is called by the built-in repr() function. If possible, the string returned should be a valid Python expression that can be used to recreate the object.
